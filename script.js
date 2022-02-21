@@ -70,3 +70,76 @@
 //   }
 // }
 // console.log(remove('!!Hi!'))
+
+// Find the Remainder
+
+// Task:
+// Write a function that accepts two integers and returns the
+// remainder of dividing the larger value by the smaller value.
+
+// Division by zero should return NaN.
+//
+// Examples:
+// n = 17
+// m = 5
+// result = 2 (remainder of `17 / 5`)
+//
+// n = 13
+// m = 72
+// result = 7 (remainder of `72 / 13`)
+//
+// n = 0
+// m = -1
+// result = 0 (remainder of `0 / -1`)
+//
+// n = 0
+// m = 1
+// result - division by zero (refer to the specifications on how to handle this in your language)
+
+// const remainder = (n, m) =>{
+//   if (n > m){
+//     return  n % m
+//   }else{
+//     return  m % n
+//   }
+// }
+
+// const remainder = (n, m) => (n > m ? n % m : m % n)
+
+// console.log(remainder(45,2))
+
+
+
+// Pirates!! Are the Cannons ready!??
+
+// Ahoy Matey!
+//
+// Welcome to the seven seas.
+//
+// You are the captain of a pirate ship.
+//
+// You are in battle against the royal navy.
+//
+// You have cannons at the ready.... or are they?
+//
+// Your task is to check if the gunners are loaded and ready, if they are: Fire!
+//
+// If they aren't ready: Shiver me timbers!
+//
+// Your gunners for each test case are 4 or less.
+//
+// When you check if they are ready their answers are in a dictionary and will either be: aye or nay
+//
+// Firing with less than all gunners ready is non-optimum
+// (this is not fire at will, this is fire by the captain's orders or walk the plank, dirty sea-dog!)
+
+// If all answers are 'aye' then Fire! if one or more are 'nay' then Shiver me timbers!
+
+//  Метод every() проверяет, удовлетворяют ли все элементы массива условию, заданному в передаваемой функции.
+
+// const cannonsReady = gunners => Object.values(gunners).every(el => el === 'aye') ? 'Fire!' : 'Shiver me timbers!'
+// console.log(cannonsReady({'aye':'aye','Joe':'aye','Johnson':'aye','Peter':'aye'}))
+
+
+
+
