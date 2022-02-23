@@ -157,5 +157,16 @@
 
 // console.log(iceBrickVolume(1,10,2))
 
+// Reversed Words
 
+//Complete the solution so that it reverses all of the words within the string passed in.
+// Example:
+// "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
+// split() строканы массивке айлантат,
+// reverse() тамгалардын ордун алмаштырат hello - olleh
+// join() массивди кайра строкага айлантат
+
+const reverseWords = (str) => str.split(' ').reverse().join(' ')
+
+console.log(reverseWords('hello world!' ))
