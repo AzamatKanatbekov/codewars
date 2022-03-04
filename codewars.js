@@ -276,6 +276,10 @@
 // [Make sure you type the exact thing I wrote or the program may not execute properly]
 //
 // Шаблонный строканы колдондук `${}`
-// const greet = name => `Hello, ${name} how are you doing today?`
-//
-// console.log(greet('Azamat'))
+const greet = name => `Hello, ${name} how are you doing today?`
+
+console.log(greet('Azamat'))
+
+const greet = name => `Hello, ${name} how are you doing today?`
+
+console.log(greet('Azamat'))
