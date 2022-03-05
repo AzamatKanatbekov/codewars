@@ -294,3 +294,46 @@ join(' ') менен массивди строкага айлантып койд
 const smash =  words => words.join(' ')
 
 console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+
+Find Maximum and Minimum Values of a List
+
+Your task is to make two functions (max and min, or maximum and minimum, etc., depending on the language)
+that receive a list of integers as input and return, respectively, the largest and lowest number in that list.
+
+Examples (Input -> Output)
+* [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+* [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+* [42, 54, 65, 87, 0]             -> min = 0, max = 87
+* [5]                             -> min = 5, max = 5
+
+Math.min(...list) менен эн минималный цифраны алдык,
+...болсо list"ги баардык значенияларды чогултуп берет
+
+const min = (list) => Math.min(...list)
+const max = (list) => Math.max(...list)
+
+console.log(min([4,6,2,1,9,63,-134,566]))
+console.log(max([4,6,2,1,9,63,-134,566]))
+
+What is between?
+
+Complete the function that takes two integers (a, b, where a < b) and return an array
+of all integers between the input parameters, including them.
+
+For example:
+
+a = 1
+b = 4
+--> [1, 2, 3, 4]
+
+const between = (a, b) => {
+  const arr = [];
+  for (let i = a; i <= b; i++) {
+    if (a < b) {
+      arr.push(i)
+    }
+  }
+  return arr
+}
+
+console.log(between(1,4))
