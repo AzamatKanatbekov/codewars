@@ -337,3 +337,37 @@ const between = (a, b) => {
 }
 
 console.log(between(1,4))
+
+Sum of positive
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
+
+1 Вариант
+const positiveSum = arr => arr.reduce((acc, rec) => rec > 0 ? acc + rec : acc, 0);
+
+2 Вариант
+const positiveSum = (arr) => {
+  return arr.reduce((acc, rec)=>{
+    if(rec > 0){
+     return rec + acc
+    }else {
+      return acc
+    }
+  },0)
+}
+console.log(positiveSum([1,-4,7,12]))
+
+Reverse List Order
+
+In this kata you will create a function that takes in a list and returns a list with the reverse order.
+
+Examples (Input -> Output)
+* [1, 2, 3, 4]  -> [4, 3, 2, 1]
+* [9, 2, 0, 7]  -> [7, 0, 2, 9]
+
+const reverseList = list => list.reverse()
+console.log(reverseList([9, 12, 2, 0, 7]))
