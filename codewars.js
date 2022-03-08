@@ -1,4 +1,5 @@
 8 kyu
+1
 
 Area or Perimeter
 
@@ -416,6 +417,4 @@ map(Number) менен кайра число кылдым
 const digitize = n =>  n.toString().split('').reverse().map(Number)
 console.log(digitize(348597))
 
-const digitize = n =>  n.toString().split('').reverse().map(Number)
-console.log(digitize(348597))
 
