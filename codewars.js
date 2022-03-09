@@ -1,6 +1,6 @@
 8 kyu
 1
-
+2
 Area or Perimeter
 
 You are given the length and width of a 4-sided polygon.
@@ -417,4 +417,6 @@ map(Number) менен кайра число кылдым
 const digitize = n =>  n.toString().split('').reverse().map(Number)
 console.log(digitize(348597))
 
-
+const digitize = n =>  n.toString().split('').reverse().map(Number)
+console.log(digitize(348597))
+4556666
