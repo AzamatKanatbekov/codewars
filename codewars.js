@@ -417,3 +417,48 @@ const digitize = n =>  n.toString().split('').reverse().map(Number)
 console.log(digitize(348597))
 
 
+Sum of Multiples
+
+Your Job
+Find the sum of all multiples of n below m
+
+Keep in Mind
+n and m are natural numbers (positive integers)
+m is excluded from the multiples
+Examples
+sumMul(2, 9)   ==> 2 + 4 + 6 + 8 = 20
+sumMul(3, 13)  ==> 3 + 6 + 9 + 12 = 30
+sumMul(4, 123) ==> 4 + 8 + 12 + ... = 1860
+sumMul(4, -7)  ==> "INVALID"
+
+const sumMul = (n,m) =>{
+  if ( n > m) return 'INVALID';
+  if (n + n > m) return n;
+  return n + sumMul(n +n,m)
+}
+console.log(sumMul(2,9))
+
+Exclamation marks series #4: Remove all exclamation marks from
+sentence but ensure a exclamation mark at the end of string
+
+Description:
+Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string.
+For a beginner kata, you can assume that the input data is always a non empty string, no need to verify it.
+
+Examples
+remove("Hi!") === "Hi!"
+remove("Hi!!!") === "Hi!"
+remove("!Hi") === "Hi!"
+remove("!Hi!") === "Hi!"
+remove("Hi! Hi!") === "Hi Hi!"
+remove("Hi") === "Hi!"
+
+1 Вариант
+const remove = (s) =>{
+  s = s.split('!');
+  return s.concat('!').join('');
+}
+console.log(remove('!Hi!'))
+
+2 Вариант
+const remove = (s) => s.replace(/!/g, '') + '!';
