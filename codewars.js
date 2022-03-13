@@ -560,12 +560,26 @@
 // wrapper_obj["value"] == "my_wrapped_string"
 // Unfortunately, the code is not working as designed. Please fix the code so that it behaves as specified.
 
-const wrap = (value) => {
-  return {
-    value: value
-  };
-};
-console.log(wrap("my_wrapped_string"))
+// const wrap = (value) => {
+//   return {
+//     value: value
+//   };
+// };
+// console.log(wrap("my_wrapped_string"))
+
+// Count Odd Numbers below n
+
+// Given a number n, return the number of positive odd numbers below n, EASY!
+//
+// oddCount(7) //=> 3, i.e [1, 3, 5]
+// oddCount(15) //=> 7, i.e [1, 3, 5, 7, 9, 11, 13]
+// Expect large Inputs!
+
+// Метод Math.floor() - округление вниз. Округляет аргумент до ближайшего меньшего целого
+const oddCount = n => Math.floor(n / 2)
+console.log(oddCount(7))
+
+
 
 
 // 7kyu
