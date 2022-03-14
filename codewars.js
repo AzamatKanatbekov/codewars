@@ -1,4 +1,4 @@
-8 kyu
+ 8 kyu
 
 Area or Perimeter
 
@@ -638,4 +638,6 @@ const smaller = (nums) => {
   })
 }
 console.log(smaller([1, 2, 0]))
+Аппарата
 
+Logan 
