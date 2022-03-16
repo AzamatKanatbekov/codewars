@@ -652,11 +652,22 @@
 // n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 
 // Массив (Array) в JavaScript является глобальным объектом, который используется для создания массивов; которые представляют собой высокоуровневые спископодобные объекты.
-const powersOfTwo = n => [...Array(n + 1)].map((el, i) => 2 ** i);
-console.log(powersOfTwo(4))
+// const powersOfTwo = n => [...Array(n + 1)].map((el, i) => 2 ** i);
+// console.log(powersOfTwo(4))
 
 
+// Volume of a Cuboid
 
+// Bob needs a fast way to calculate the volume of a cuboid with three values: length, width and the height of the cuboid. Write a function to help Bob with this calculation.
+
+// class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//     return length * (width * height)
+//   }
+// }
+
+// const getVolumeOfCuboid = (length, width, height) => length * (width * height)
+// console.log(getVolumeOfCuboid(1,2,2))
 
 
 
