@@ -737,5 +737,6 @@
 // }
 // console.log(defineSuit('3♣'))
 
-
-
+// Aspect Ratio Cropping - Part 1
+const aspectRatio = (x,y) => [Math.ceil(y*16/9), y];
+console.log(aspectRatio(640, 480))
