@@ -766,5 +766,9 @@
 //
 //
 // Vowel remover
-const shortcut = string => string.split(/[aeiou]/g).join('')
-console.log(shortcut('hello'))
+// const shortcut = string => string.split(/[aeiou]/g).join('')
+// console.log(shortcut('hello'))
+
+// DNA to RNA Conversion
+const DNAtoRNA = dna => dna.split('T').join('U');
+console.log(DNAtoRNA('GACCGCCGCC'))
