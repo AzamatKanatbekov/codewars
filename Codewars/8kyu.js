@@ -770,5 +770,16 @@
 // console.log(shortcut('hello'))
 
 // DNA to RNA Conversion
-const DNAtoRNA = dna => dna.split('T').join('U');
-console.log(DNAtoRNA('GACCGCCGCC'))
+// const DNAtoRNA = dna => dna.split('T').join('U');
+// console.log(DNAtoRNA('GACCGCCGCC'))
+
+// get character from ASCII Value
+// // Статический метод String.fromCharCode() возвращает строку, созданную из указанной последовательности значений единиц кода UTF-16.
+// const getChar = c => String.fromCharCode(c)
+// console.log(getChar(65))
+
+// Gravity Flip
+const flip = (d, a) => {
+  return  d === 'R' ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a)
+}
+console.log(flip([3, 2, 1, 2, 4, 5, 45],[1, 4, 5, 3, 5]))
