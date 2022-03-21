@@ -779,7 +779,11 @@
 // console.log(getChar(65))
 
 // Gravity Flip
-const flip = (d, a) => {
-  return  d === 'R' ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a)
-}
-console.log(flip([3, 2, 1, 2, 4, 5, 45],[1, 4, 5, 3, 5]))
+// const flip = (d, a) => {
+//   return  d === 'R' ? a.sort((a, b) => a - b) : a.sort((a, b) => b - a)
+// }
+// console.log(flip([3, 2, 1, 2, 4, 5, 45],[1, 4, 5, 3, 5]))
+
+// MakeUpperCase
+// const makeUpperCase = str => str.toUpperCase()
+// console.log(makeUpperCase('hello'))
