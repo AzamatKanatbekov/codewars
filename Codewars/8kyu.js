@@ -801,11 +801,26 @@
 // console.log(updateLight('green'))
 
 // Grasshopper - Check for factor
-const checkForFactor = (base, factor) => {
-  if (base % factor === 0){
-    return true
-  }else {
-    return false
-  }
-}
-console.log(checkForFactor(653,7))
+// const checkForFactor = (base, factor) => {
+//   if (base % factor === 0){
+//     return true
+//   }else {
+//     return false
+//   }
+// }
+// console.log(checkForFactor(653,7))
+
+// Quarter of the year
+// const quarterOf = (month) => {
+//   if (month > 0 && month <= 3){
+//     return 1
+//   }else if (month > 3 && month <= 6 ){
+//     return 2
+//   }else if (month > 6 && month <= 9 ){
+//     return 3
+//   }else if (month > 9 && month <= 12 ){
+//     return 4
+//   }
+// }
+// const quarterOf = month => Math.ceil(month / 3);
+// console.log(quarterOf(7))
