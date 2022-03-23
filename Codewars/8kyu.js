@@ -843,5 +843,9 @@
 // console.log(getGrade(56,65,78))
 
 // Parse nice int from char problem
-const getAge = inputString => +inputString[0]
-console.log(getAge('4 years old'))
+// const getAge = inputString => +inputString[0]
+// console.log(getAge('4 years old'))
+
+// Beginner - Lost Without a Map
+const maps = x => x.map(el => el * 2)
+console.log(maps([1, 2, 3]))
