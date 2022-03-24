@@ -855,5 +855,16 @@
 // console.log(zeroFuel(50, 25, 2))
 
 // Function 3 - multiplying two numbers
-const multiply = (x,y) => x * y
-console.log(multiply(2,3))
+// const multiply = (x,y) => x * y
+// console.log(multiply(2,3))
+
+// on+wait > cap
+const enough = (cap, on, wait) => {
+  if(on+wait > cap){
+    return on + wait - cap
+  }else{
+    return 0
+  }
+}
+console.log(enough(100, 60, 50))
+
