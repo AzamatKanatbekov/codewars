@@ -1,4 +1,4 @@
- 8  8kyu
+ 8 7kyu
 
 
 You are given the length and width of a 4-sided polygon.
