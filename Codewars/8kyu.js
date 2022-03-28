@@ -880,11 +880,15 @@
 
 
 // If you can't sleep, just count sheep!!
-const countSheep = (num) =>{
-  let result = ''
-  for (let i = 1; i <= num; i++){
-    result += i.toString() + ' sheep...'
-  }
-  return result
-}
-console.log(countSheep(2))
+// const countSheep = (num) =>{
+//   let result = ''
+//   for (let i = 1; i <= num; i++){
+//     result += i.toString() + ' sheep...'
+//   }
+//   return result
+// }
+// console.log(countSheep(2))
+
+// Convert a string to an array
+const stringToArray = string => string.split(' ')
+console.log(stringToArray('Robin Singh'))
