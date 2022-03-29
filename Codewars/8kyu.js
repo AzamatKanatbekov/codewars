@@ -917,3 +917,8 @@
 // Merge two sorted arrays into one
 // const mergeArrays = (arr1, arr2) => [...new Set([...arr1, ...arr2].sort((a,b) => a - b))]
 // console.log(mergeArrays([11,1,2,3,4], [1,5,6,10,8]))
+
+
+// Area of a Square
+// const squareArea = A => Number(((2 * A / 3.1416)**2).toFixed(2))
+// console.log(squareArea(2))
