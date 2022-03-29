@@ -903,12 +903,17 @@
 
 
 // Find the first non-consecutive number
-const firstNonConsecutive = (arr) => {
-  for (let i = 0; i <arr.length - 1; i++){
-    if(arr[i+1] !== arr[i]+1){
-      return arr[i+1];
-    }
-  }
-  return null
-}
-console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
+// const firstNonConsecutive = (arr) => {
+//   for (let i = 0; i <arr.length - 1; i++){
+//     if(arr[i+1] !== arr[i]+1){
+//       return arr[i+1];
+//     }
+//   }
+//   return null
+// }
+// console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
+
+// Объект Set – это особый вид коллекции: «множество» значений (без ключей), где каждое значение может появляться только один раз.
+// Merge two sorted arrays into one
+// const mergeArrays = (arr1, arr2) => [...new Set([...arr1, ...arr2].sort((a,b) => a - b))]
+// console.log(mergeArrays([11,1,2,3,4], [1,5,6,10,8]))
