@@ -927,3 +927,16 @@
 // const take = (arr, n) => arr.slice(0,n)
 // const take = (arr, n) => arr.filter((el,id) => id < n)
 // console.log(take([38,37,28,-37,-59,-29,80,62,32,-8], 5))
+
+// Count of positives / sum of negatives
+// const countPositivesSumNegatives = (input) => {
+//   let positiveNums = 0;
+//   let negativeNums = 0;
+//   if (input === null || input.length === 0) {
+//     return [];
+//   } else {
+//     input.forEach((num) => num > 0 ? positiveNums++ : negativeNums += num);
+//   }
+//   return [positiveNums, negativeNums];
+// }
+// console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
