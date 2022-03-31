@@ -922,3 +922,8 @@
 // Area of a Square
 // const squareArea = A => Number(((2 * A / 3.1416)**2).toFixed(2))
 // console.log(squareArea(2))
+
+// Enumerable Magic #25 - Take the First N Elements
+// const take = (arr, n) => arr.slice(0,n)
+// const take = (arr, n) => arr.filter((el,id) => id < n)
+// console.log(take([38,37,28,-37,-59,-29,80,62,32,-8], 5))
