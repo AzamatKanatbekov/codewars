@@ -38,11 +38,15 @@
 //
 
 // Mumbling
-const accum = (s) => {
-  let result = ''
-  for (let i = 0; i < s.length; i++){
-    result += s[i].toUpperCase() + s[i].toLowerCase().repeat(i) + (i < s.length - 1 ? '-' : '')
-  }
-  return result
-}
-console.log(accum('abcd'))
+// const accum = (s) => {
+//   let result = ''
+//   for (let i = 0; i < s.length; i++){
+//     result += s[i].toUpperCase() + s[i].toLowerCase().repeat(i) + (i < s.length - 1 ? '-' : '')
+//   }
+//   return result
+// }
+// console.log(accum('abcd'))
+
+// Day of the Year
+// const toDayOfYear = (arr) => (new Date(arr[2],arr[1]-1,arr[0]).getTime()-new Date(arr[2],0,0).getTime())/1000/60/60/24
+// console.log(toDayOfYear([1, 1, 2000]))
