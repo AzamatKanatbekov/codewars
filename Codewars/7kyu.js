@@ -29,7 +29,6 @@
 //
 // * Input [5, 4, 3, 2, 1] => Output [4, 3, 2, 1, 0]
 // * Input [1, 2, 0] => Output [1, 1, 0]Промисы
-//
 // const smaller = (nums) => {
 //   return nums.map((el, idx)=>{
 //     return nums.slice(idx).filter(item => item < el).length
@@ -37,3 +36,13 @@
 // }
 // console.log(smaller([1, 2, 0]))
 //
+
+// Mumbling
+const accum = (s) => {
+  let result = ''
+  for (let i = 0; i < s.length; i++){
+    result += s[i].toUpperCase() + s[i].toLowerCase().repeat(i) + (i < s.length - 1 ? '-' : '')
+  }
+  return result
+}
+console.log(accum('abcd'))
