@@ -50,3 +50,18 @@
 // Day of the Year
 // const toDayOfYear = (arr) => (new Date(arr[2],arr[1]-1,arr[0]).getTime()-new Date(arr[2],0,0).getTime())/1000/60/60/24
 // console.log(toDayOfYear([1, 1, 2000]))
+
+// Frank's Sticky Calculator
+const stickyCalc = (operation, val1, val2) => {
+  val1 = Math.round(val1)
+  val2 = Math.round(val2)
+  val3 = Number(val1.toString() + val2.toString());
+  switch (operation){
+    case "+": result = val3 + val2; break;
+    case "-": result = val3 - val2; break;
+    case "*": result = val3 * val2; break;
+    case "/": result = val3 / val2; break;
+  }
+  return Math.round(result);
+}
+console.log(stickyCalc('/', 433, 930))
