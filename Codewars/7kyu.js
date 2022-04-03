@@ -67,5 +67,15 @@
 // console.log(stickyCalc('/', 433, 930))
 
 // Two to One
-const longest = (s1, s2) => [...new Set((s1 + s2).split(''))].sort().join('')
-console.log(longest("aretheyhere", "yestheyarehere"))
+// const longest = (s1, s2) => [...new Set((s1 + s2).split(''))].sort().join('')
+// console.log(longest("aretheyhere", "yestheyarehere"))
+
+
+// Case Swapping
+// const swap = (str) => {
+//   return str.split('').map((el) =>{
+//     if(el.toUpperCase()===el) return el.toLowerCase()
+//     if(el.toLowerCase()===el) return el.toUpperCase()
+//   }).join('')
+// // }
+// console.log(swap('HelloWorld'))
