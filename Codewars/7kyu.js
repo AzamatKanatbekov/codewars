@@ -82,14 +82,25 @@
 // console.log(swap('HelloWorld'))
 
 // Speed Control
-const gps = (s, x) => {
-  if (x.length<=1) {
-    return 0;
-  }
-  let output = [];
-  for (let i = 0; i < x.length-1; i++) {
-    output.push((x[i+1]-x[i])*3600/s);
-  }
-  return Math.max(...output);
-}
-console.log(gps(14,[0.0, 0.01, 0.36, 0.6, 0.84, 1.05, 1.26, 1.47, 1.68, 1.89, 2.1, 2.31, 2.52, 2.73, 2.94, 3.15]))
+// const gps = (s, x) => {
+//   if (x.length<=1) {
+//     return 0;
+//   }
+//   let output = [];
+//   for (let i = 0; i < x.length-1; i++) {
+//     output.push((x[i+1]-x[i])*3600/s);
+//   }
+//   return Math.max(...output);
+// }
+// console.log(gps(14,[0.0, 0.01, 0.36, 0.6, 0.84, 1.05, 1.26, 1.47, 1.68, 1.89, 2.1, 2.31, 2.52, 2.73, 2.94, 3.15]))
+
+// Find the middle element
+// const gimme = (triplet) => {
+//   const sorted = [...triplet].sort((a, b) => a - b)
+//   return triplet.indexOf(sorted[1])
+// };
+// console.log(gimme([2,3,1]))
+
+// Return the closest number multiple of 10
+const closestMultiple10 = num => Math.round(num/10)*10
+console.log(closestMultiple10(55))
