@@ -144,13 +144,21 @@
 
 // Fun with lists: indexOf
 // В JavaScript итератор - это объект, который предоставляет метод next(), возвращающий следующий элемент последовательности.
-const indexOf = (head, value) => {
-  let count = 0
-  while(head) {
-    if (head.data === value){return count}
-    head = head.next;
-    count++
-  }
-  return -1;
-}
-console.log(indexOf([1, 2, 3], 3))
+// const indexOf = (head, value) => {
+//   let count = 0
+//   while(head) {
+//     if (head.data === value){return count}
+//     head = head.next;
+//     count++
+//   }
+//   return -1;
+// }
+// console.log(indexOf([1, 2, 3], 3))
+
+// Find the nth Digit of a Number
+// const findDigit = (num, nth) => {
+//   if (nth<=0) return -1;
+//   let nums=(''+Math.abs(num));
+//   return nums.slice(nums.length-nth,nums.length-nth+1)*1;
+// }
+// console.log(findDigit(5673, 4))
