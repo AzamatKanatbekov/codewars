@@ -141,3 +141,16 @@
 //   map(el => el[0].toUpperCase() + el.slice(1)).join(' ');
 // };
 // console.log(("How can mirrors be real if our eyes aren't real").toJadenCase())
+
+// Fun with lists: indexOf
+// В JavaScript итератор - это объект, который предоставляет метод next(), возвращающий следующий элемент последовательности.
+const indexOf = (head, value) => {
+  let count = 0
+  while(head) {
+    if (head.data === value){return count}
+    head = head.next;
+    count++
+  }
+  return -1;
+}
+console.log(indexOf([1, 2, 3], 3))
