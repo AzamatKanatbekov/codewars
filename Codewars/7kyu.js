@@ -163,7 +163,10 @@
 // }
 // console.log(findDigit(5673, 4))
 
-
 // makeBackronym
 // const makeBackronym = str => str.toUpperCase().split('').map(l => dict[l]).join(" ");
 // console.log(makeBackronym('codewars'))
+
+// Round up to the next multiple of 5
+// const roundToNext5 = n => Math.ceil(n/5)*5
+// console.log(roundToNext5(6))
