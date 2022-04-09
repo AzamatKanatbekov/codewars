@@ -1,4 +1,4 @@
-// 7kyu7
+// 7 kyu
 //
 // Age in days
 //
@@ -162,3 +162,8 @@
 //   return nums.slice(nums.length-nth,nums.length-nth+1)*1;
 // }
 // console.log(findDigit(5673, 4))
+
+
+// makeBackronym
+// const makeBackronym = str => str.toUpperCase().split('').map(l => dict[l]).join(" ");
+// console.log(makeBackronym('codewars'))
