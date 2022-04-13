@@ -170,3 +170,14 @@
 // Round up to the next multiple of 5
 // const roundToNext5 = n => Math.ceil(n/5)*5
 // console.log(roundToNext5(6))
+
+
+// Find the vowels
+const vowelIndices = (word) => {
+  let arr=[]
+  let a=word.split('');
+  for (let i=0;i<word.length;i++){
+    if (/[aeuoiy]/gi.test(a[i])) {arr.push(i+1)}
+  }
+  return arr
+}
