@@ -173,11 +173,24 @@
 
 
 // Find the vowels
-const vowelIndices = (word) => {
-  let arr=[]
-  let a=word.split('');
-  for (let i=0;i<word.length;i++){
-    if (/[aeuoiy]/gi.test(a[i])) {arr.push(i+1)}
-  }
-  return arr
-}
+// const vowelIndices = (word) => {
+//   let arr=[]
+//   let a=word.split('');
+//   for (let i=0;i<word.length;i++){
+//     if (/[aeuoiy]/gi.test(a[i])) {arr.push(i+1)}
+//   }
+//   return arr
+// }
+// console.log(vowelIndices('Super'))
+
+
+// ...arr - rest operator
+// join() - Преобразовать строку
+// Метод includes() определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.
+const unusedDigits = (...arr) => {
+  let digits = arr.join();
+  return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    .filter(el => !digits.includes(el))
+    .join('');
+};
+console.log(unusedDigits(12, 34, 56, 78))
