@@ -187,10 +187,24 @@
 // ...arr - rest operator
 // join() - Преобразовать строку
 // Метод includes() определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.
-const unusedDigits = (...arr) => {
-  let digits = arr.join();
-  return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    .filter(el => !digits.includes(el))
-    .join('');
-};
-console.log(unusedDigits(12, 34, 56, 78))
+// const unusedDigits = (...arr) => {
+//   let digits = arr.join();
+//   return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+//     .filter(el => !digits.includes(el))
+//     .join('');
+// };
+// console.log(unusedDigits(12, 34, 56, 78))
+
+// You Got Change?
+const bills = [100, 50, 20, 10, 5, 1];
+const giveChange = amount => (
+  bills
+    .map(value => {
+      let result = Math.trunc(amount / value);
+      amount = amount % value;
+
+      return result;
+    })
+    .reverse()
+);
+console.log(giveChange(365))
