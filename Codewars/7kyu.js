@@ -196,15 +196,16 @@
 // console.log(unusedDigits(12, 34, 56, 78))
 
 // You Got Change?
-const bills = [100, 50, 20, 10, 5, 1];
-const giveChange = amount => (
-  bills
-    .map(value => {
-      let result = Math.trunc(amount / value);
-      amount = amount % value;
+// const bills = [100, 50, 20, 10, 5, 1];
+// const giveChange = amount => (
+//   bills
+//     .map(value => {
+//       let result = Math.trunc(amount / value);
+//       amount = amount % value;
+//
+//       return result;
+//     })
+//     .reverse()
+// );
+// console.log(giveChange(365))
 
-      return result;
-    })
-    .reverse()
-);
-console.log(giveChange(365))
