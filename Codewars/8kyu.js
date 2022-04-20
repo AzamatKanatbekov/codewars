@@ -949,3 +949,18 @@
 //   true,  false, false, true ,
 //   true,  true,  true,  true ,
 //   false, false, true,  true]))
+
+
+// Check same case
+// const sameCase = (a, b) => /[a-z]/i.test(a) && /[a-z]/i.test(b) ? Number(/[a-z]/.test(a) === /[a-z]/.test(b)) : -1
+// console.log(sameCase('?','h'))
+//
+// const sameCase = (a, b) => {
+//   if(a.toUpperCase() === a.toLowerCase() || b.toLowerCase() === b.toUpperCase()){
+//     return -1
+//   }else if(a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()){
+//     return 1
+//   }else{
+//     return 0
+//   }
+// }
