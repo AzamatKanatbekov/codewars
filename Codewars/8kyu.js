@@ -966,5 +966,9 @@
 // }
 
 
-const stringClean = (s) => s.replace(/\d/g, "")
-console.log(stringClean('E3at m2e2!!'))
+// const stringClean = (s) => s.replace(/\d/g, "")
+// console.log(stringClean('E3at m2e2!!'))
+
+
+const binToDec = bin => parseInt(bin, 2)
+console.log(binToDec('1001001'))
