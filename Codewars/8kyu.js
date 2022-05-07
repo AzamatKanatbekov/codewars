@@ -970,5 +970,10 @@
 // console.log(stringClean('E3at m2e2!!'))
 
 
-const binToDec = bin => parseInt(bin, 2)
-console.log(binToDec('1001001'))
+// const binToDec = bin => parseInt(bin, 2)
+// console.log(binToDec('1001001'))
+
+// To square(root) or not to square(root)
+// Метод Math.sqrt() возвращает квадратный корень числа
+// const squareOrSquareRoot = (array) => array.map(item => Math.sqrt(item) == Math.sqrt(item).toFixed(0) ? Math.sqrt(item) : item * item);
+// console.log(squareOrSquareRoot([ 4, 3, 9, 7, 2, 1 ]))
