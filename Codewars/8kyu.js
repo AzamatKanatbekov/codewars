@@ -977,3 +977,7 @@
 // Метод Math.sqrt() возвращает квадратный корень числа
 // const squareOrSquareRoot = (array) => array.map(item => Math.sqrt(item) == Math.sqrt(item).toFixed(0) ? Math.sqrt(item) : item * item);
 // console.log(squareOrSquareRoot([ 4, 3, 9, 7, 2, 1 ]))
+
+// Name Shuffler
+// const nameShuffler = str => str.split(' ').reverse().join(' ')
+// console.log(nameShuffler('john McClane'))
