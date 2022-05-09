@@ -981,3 +981,7 @@
 // Name Shuffler
 // const nameShuffler = str => str.split(' ').reverse().join(' ')
 // console.log(nameShuffler('john McClane'))
+
+// Twice as old
+// const twiceAsOld = (dadYearsOld, sonYearsOld) => Math.abs(dadYearsOld - sonYearsOld * 2);
+// console.log(twiceAsOld(55,30))
