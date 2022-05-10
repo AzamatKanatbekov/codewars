@@ -985,3 +985,7 @@
 // Twice as old
 // const twiceAsOld = (dadYearsOld, sonYearsOld) => Math.abs(dadYearsOld - sonYearsOld * 2);
 // console.log(twiceAsOld(55,30))
+
+// Third Angle of a Triangle
+const otherAngle = (a, b) => 180 - a - b
+console.log(otherAngle(43, 78))
