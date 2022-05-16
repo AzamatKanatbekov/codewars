@@ -987,5 +987,12 @@
 // console.log(twiceAsOld(55,30))
 
 // Third Angle of a Triangle
-const otherAngle = (a, b) => 180 - a - b
-console.log(otherAngle(43, 78))
+// const otherAngle = (a, b) => 180 - a - b
+// console.log(otherAngle(43, 78))
+
+// Return Negative
+// const makeNegative = num =>  num > 0 ? -num : num
+// function makeNegative(num) {
+//   return -Math.abs(num);
+// }
+// console.log(makeNegative(45))
